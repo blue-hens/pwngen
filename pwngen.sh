@@ -31,7 +31,7 @@ context.log_level = 'debug'
 " >> ${FILENAME}.py
 
 # if remote and port given make a tubes
-echo "r = remote(\"${REMOTE}\", \"${PORT}\")" >> ${FILENAME}.py
+echo "r = remote(\"${REMOTE}\", ${PORT})" >> ${FILENAME}.py
 
 # if process given redefine r, because you'll probably develop your script
 # locally. Comment later when its ready to pwn.
